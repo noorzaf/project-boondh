@@ -14,6 +14,8 @@ June–August 2022.
 
 ## What happened
 
+![Students matching their test strips against the colour chart during a session (faces blurred)](media/boondh-session.jpg)
+
 - **72 households** across three school sites in Gilgit tested their drinking water on **14 measures** using 14-in-1 reagent strips, and answered a questionnaire about where their water comes from, how they treat it, and whether anyone at home had a water-related illness.
 - The strips detected **lead, chromium and fluoride** in most samples, and showed that **three in four samples had no chlorine residual**, meaning the water was not being disinfected by the time it reached the tap.
 - Acting on the results, the school had its water tested by the **Pakistan Council of Scientific and Industrial Research (PCSIR)** laboratory, which verified the contamination.
@@ -90,6 +92,7 @@ project-boondh/
 │   ├── summary.md             full results table, overall and by site
 │   └── exceedances.png        chart above
 └── media/                     photos of the test kit
+    └── boondh-session.jpg     students testing strips during a session (faces blurred)
 ```
 
 ## What I'd do next
