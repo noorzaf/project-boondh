@@ -58,17 +58,9 @@ The analysis script checks this for every measure, comparing each WHO limit with
 
 ## Data and privacy
 
-The field spreadsheet recorded children's and parents' names, phone numbers, household income and family illnesses. All participants gave informed consent, and none of those details are published here.
+The children who took part were sharing details about their own homes, so I kept the published data to a minimum. My field sheet has names, parents’ names, phone numbers, household income and family illnesses. None of that is in this repository, and every family gave informed consent.
 
-[`analysis/anonymise.py`](analysis/anonymise.py) turns the private sheet into the public dataset:
-
-- every child is replaced by a random sample ID, and rows are shuffled so they can't be matched back to the original sheet
-- schools are replaced by neutral site labels (A, B, C)
-- names, contact details, income, age and free-text answers are dropped
-- illness is kept only as yes / no / unknown for the household
-- strip readings are cleaned into numbers; where a colour fell between two pads, both ends of the range are kept
-
-The raw sheet never enters this repository (see `.gitignore`).
+I wrote [`analysis/anonymise.py`](analysis/anonymise.py) to build the public dataset from that sheet. It gives each household a random ID, shuffles the rows, labels the schools A, B and C, and drops names, contact details, income, ages and written answers. The only thing it keeps about illness is whether the household reported one. It turns the strip readings into numbers, and where a colour fell between two pads it keeps both ends of the range.
 
 ---
 
